@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salicorne — Bistrot marin face au port de Saint-Nazaire</title>
+  <meta name="description" content="Bistrot marin à Saint-Nazaire : cuisine du marché, poissons de la criée et produits de la presqu’île. Menu du midi, terrasse face au port, réservation en ligne.">
+  <!-- Démonstration : restaurant fictif, exclu des moteurs de recherche. -->
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://simonvallee.fr/demos/restaurant/">
+  <link rel="alternate" hreflang="fr" href="https://simonvallee.fr/demos/restaurant/">
+  <link rel="alternate" hreflang="en" href="https://simonvallee.fr/demos/restaurant/en/">
+  <link rel="alternate" hreflang="x-default" href="https://simonvallee.fr/demos/restaurant/">
+  <meta name="theme-color" content="#10241f">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="Salicorne — Bistrot marin à Saint-Nazaire">
+  <meta property="og:description" content="Cuisine du marché et produits de la mer, face au port. Réservation en ligne.">
+  <meta property="og:url" content="https://simonvallee.fr/demos/restaurant/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_GB">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" href="../../assets/fonts/playfair-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../assets/css/demo-banner.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../../assets/js/main.js" defer></script>
+  <script src="../../assets/js/forms.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Salicorne",
+    "description": "Bistrot marin à Saint-Nazaire (restaurant fictif de démonstration).",
+    "url": "https://simonvallee.fr/demos/restaurant/",
+    "telephone": "+33261913780",
+    "servesCuisine": ["Française", "Poissons et fruits de mer"],
+    "priceRange": "€€",
+    "acceptsReservations": "True",
+    "menu": "https://simonvallee.fr/demos/restaurant/#carte",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=70",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3 quai de l’Exemple",
+      "postalCode": "44600",
+      "addressLocality": "Saint-Nazaire",
+      "addressCountry": "FR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "12:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "19:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "19:00", "closes": "22:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "15:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <aside class="demo-banner" aria-label="Site de démonstration">
+    <span class="demo-banner__tag">Démo</span>
+    <span>Site de démonstration — restaurant fictif. Réalisé par <a href="../../">Simon Vallée</a>.</span>
+  </aside>
+
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="logo" href="./">
+        <strong>Salicorne</strong>
+        <small>Bistrot marin · Saint-Nazaire</small>
+      </a>
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#carte">La carte</a></li>
+          <li><a href="#horaires">Horaires &amp; accès</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#reserver">Réserver</a></li>
+        </ul>
+      </nav>
+      <div class="lang" role="group" aria-label="Langue">
+        <span aria-current="true">FR</span>
+        <a href="en/" hreflang="en" lang="en" aria-label="English version">EN</a>
+      </div>
+      <a class="btn btn--primary" href="#reserver">Réserver</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" data-nav-toggle>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media" data-fallback-box>
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1600&amp;q=70"
+             srcset="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w,
+                     https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w,
+                     https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=2400&amp;q=65 2400w"
+             sizes="100vw" alt="" width="1600" height="1067" fetchpriority="high" data-fallback>
+      </div>
+      <div class="wrap">
+        <div class="hero__content">
+          <p class="hero__kicker">Bistrot marin · Saint-Nazaire</p>
+          <h1 id="hero-title">Cuisine du marché, <em>face au port</em></h1>
+          <p class="hero__lead">Poissons de la criée, légumes de la presqu’île et vins de Loire, servis sans chichis dans une salle lumineuse ouverte sur les quais.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#reserver">Réserver une table</a>
+            <a class="btn btn--light" href="#carte">Voir la carte</a>
+          </div>
+          <ul class="hero__facts">
+            <li>Du mardi au dimanche</li>
+            <li>Terrasse face au port</li>
+            <li>Menu du midi 21&nbsp;€</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="story-title">
+      <div class="wrap story">
+        <div class="story__text">
+          <p class="kicker">La maison</p>
+          <h2 id="story-title">Le goût de l’estuaire</h2>
+          <p>Chaque matin, notre cheffe choisit le poisson à la criée, les légumes chez les maraîchers voisins et le sel à Guérande.</p>
+          <p>La carte change au rythme des arrivages et des saisons&nbsp;: une cuisine franche, généreuse, pensée pour être partagée. Le midi, un menu court et rapide&nbsp;; le soir, on prend le temps, le regard tourné vers les bateaux.</p>
+          <p class="signature">Louise, cheffe de Salicorne</p>
+        </div>
+        <div class="story__art" aria-hidden="true">
+          <svg viewBox="0 0 200 250" preserveAspectRatio="xMidYMax slice">
+            <defs>
+              <g id="stem"><rect x="-6" y="-22" width="12" height="22" rx="6"/><rect x="-5.5" y="-44" width="11" height="21" rx="5.5"/><rect x="-5" y="-65" width="10" height="20" rx="5"/><rect x="-4.5" y="-85" width="9" height="19" rx="4.5"/><rect x="-4" y="-103" width="8" height="17" rx="4"/></g>
+            </defs>
+            <circle cx="138" cy="72" r="30" fill="#c8553d"/>
+            <g fill="#8fb28a">
+              <use href="#stem" transform="translate(100 252)"/>
+              <use href="#stem" transform="translate(100 208) rotate(-32) scale(.8)"/>
+              <use href="#stem" transform="translate(100 186) rotate(28) scale(.7)"/>
+              <use href="#stem" transform="translate(70 252) rotate(-14) scale(.9)"/>
+              <use href="#stem" transform="translate(66 214) rotate(-44) scale(.6)"/>
+              <use href="#stem" transform="translate(134 252) rotate(16) scale(.85)"/>
+              <use href="#stem" transform="translate(146 220) rotate(42) scale(.55)"/>
+            </g>
+            <g fill="none" stroke="#f5efe4" stroke-linecap="round" opacity=".35" stroke-width="2">
+              <path d="M20 232 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0"/>
+              <path d="M30 242 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="carte" aria-labelledby="carte-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">La carte</p>
+          <h2 id="carte-title">Au fil des saisons</h2>
+          <p>Carte d’automne — elle évolue selon les arrivages du jour.</p>
+        </div>
+
+        <div class="menu-lunch">
+          <strong>Menu du midi — 21&nbsp;€</strong>
+          <p>Du mardi au vendredi · entrée + plat ou plat + dessert · 26&nbsp;€ le menu complet</p>
+        </div>
+
+        <div class="menu">
+          <div>
+            <h3>Entrées</h3>
+            <ul>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Huîtres de Pen-Bé n°3, les six</span><span class="dish__price">14&nbsp;€</span></div>
+                <p>Mignonnette à l’échalote, pain de seigle et beurre demi-sel</p>
+              </li>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Tartare de maigre</span><span class="dish__price">13&nbsp;€</span></div>
+                <p>Pomme verte, salicorne et huile de livèche</p>
+              </li>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Sardines marinées</span><span class="dish__price">11&nbsp;€</span></div>
+                <p>Condiment citron-câpres, pickles d’oignon rouge</p>
+              </li>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Velouté de potimarron <abbr class="veg" title="Végétarien">V</abbr></span><span class="dish__price">9&nbsp;€</span></div>
+                <p>Noisettes torréfiées, crème crue</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Plats</h3>
+            <ul>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Poisson du jour de la criée</span><span class="dish__price">24&nbsp;€</span></div>
+                <p>Beurre blanc nantais, légumes du marché</p>
+              </li>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Cotriade du bistrot</span><span class="dish__price">23&nbsp;€</span></div>
+                <p>Soupe de poissons à la bretonne, pommes de terre, croûtons et rouille</p>
+              </li>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Moules de bouchot marinières</span><span class="dish__price">18&nbsp;€</span></div>
+                <p>Frites maison et mayonnaise aux herbes</p>
+              </li>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Risotto aux champignons <abbr class="veg" title="Végétarien">V</abbr></span><span class="dish__price">19&nbsp;€</span></div>
+                <p>Cèpes et champignons de Paris, vieux parmesan</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Desserts</h3>
+            <ul>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Far breton aux pruneaux</span><span class="dish__price">8&nbsp;€</span></div>
+                <p>Caramel au beurre salé de Guérande</p>
+              </li>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Tarte fine aux pommes</span><span class="dish__price">9&nbsp;€</span></div>
+                <p>Glace vanille maison</p>
+              </li>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Mousse au chocolat noir</span><span class="dish__price">8&nbsp;€</span></div>
+                <p>Fleur de sel et tuile croustillante</p>
+              </li>
+              <li class="dish">
+                <div class="dish__top"><span class="dish__name">Fromages affinés</span><span class="dish__price">10&nbsp;€</span></div>
+                <p>Sélection de notre fromager, confiture de cerises noires</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="menu-note">Prix nets, service compris. Liste des allergènes disponible sur demande. Vins de Loire au verre et en bouteille.</p>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="horaires" aria-labelledby="horaires-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">Horaires &amp; accès</p>
+          <h2 id="horaires-title">Venir nous voir</h2>
+        </div>
+        <div class="info">
+          <table class="hours">
+            <caption>Horaires d’ouverture</caption>
+            <tbody>
+              <tr class="closed"><th scope="row">Lundi</th><td>Fermé</td></tr>
+              <tr><th scope="row">Mardi – vendredi</th><td>12&nbsp;h – 14&nbsp;h · 19&nbsp;h – 22&nbsp;h</td></tr>
+              <tr><th scope="row">Samedi</th><td>12&nbsp;h – 14&nbsp;h&nbsp;30 · 19&nbsp;h – 22&nbsp;h&nbsp;30</td></tr>
+              <tr><th scope="row">Dimanche</th><td>12&nbsp;h – 15&nbsp;h</td></tr>
+            </tbody>
+          </table>
+          <div>
+            <h3>Adresse</h3>
+            <address>
+              Salicorne<br>
+              3 quai de l’Exemple<br>
+              44600 Saint-Nazaire<br>
+              <a href="tel:+33261913780">02 61 91 37 80</a> · <a href="mailto:bonjour@salicorne.example">bonjour@salicorne.example</a>
+            </address>
+            <ul>
+              <li>Sur le port, à quelques minutes à pied de la base sous-marine</li>
+              <li>Parking gratuit à proximité, arrêt de bus à 200&nbsp;m</li>
+              <li>Salle accessible aux personnes à mobilité réduite</li>
+            </ul>
+            <p style="margin-top:1.25rem"><a href="https://www.openstreetmap.org/?mlat=47.2735&amp;mlon=-2.2045#map=16/47.2735/-2.2045">Voir le plan (OpenStreetMap)</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galerie" aria-labelledby="galerie-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">Galerie</p>
+          <h2 id="galerie-title">Un avant-goût</h2>
+        </div>
+        <div class="gallery">
+          <figure data-fallback-box>
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=900&amp;q=70"
+                 srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=600&amp;q=70 600w,
+                         https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=900&amp;q=70 900w,
+                         https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=70 1400w"
+                 sizes="(max-width: 44rem) 100vw, 50vw" alt="Assiette joliment dressée par la cheffe" width="900" height="600" loading="lazy" decoding="async" data-fallback>
+            <figcaption>Une assiette de la cheffe</figcaption>
+          </figure>
+          <figure data-fallback-box>
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&amp;fit=crop&amp;w=900&amp;q=70"
+                 srcset="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&amp;fit=crop&amp;w=600&amp;q=70 600w,
+                         https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&amp;fit=crop&amp;w=900&amp;q=70 900w"
+                 sizes="(max-width: 44rem) 50vw, 50vw" alt="Pavé de poisson grillé et légumes de saison" width="900" height="600" loading="lazy" decoding="async" data-fallback>
+            <figcaption>Le poisson du jour</figcaption>
+          </figure>
+          <figure data-fallback-box>
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=900&amp;q=70"
+                 srcset="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=600&amp;q=70 600w,
+                         https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=900&amp;q=70 900w"
+                 sizes="(max-width: 44rem) 50vw, 50vw" alt="La salle du restaurant, tables dressées" width="900" height="600" loading="lazy" decoding="async" data-fallback>
+            <figcaption>La salle</figcaption>
+          </figure>
+          <figure data-fallback-box>
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&amp;fit=crop&amp;w=700&amp;q=70"
+                 srcset="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&amp;fit=crop&amp;w=500&amp;q=70 500w,
+                         https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&amp;fit=crop&amp;w=700&amp;q=70 700w"
+                 sizes="(max-width: 44rem) 50vw, 33vw" alt="Verres de vin servis à table" width="700" height="700" loading="lazy" decoding="async" data-fallback>
+            <figcaption>Vins de Loire</figcaption>
+          </figure>
+          <figure data-fallback-box>
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=700&amp;q=70"
+                 srcset="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=500&amp;q=70 500w,
+                         https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=700&amp;q=70 700w"
+                 sizes="(max-width: 44rem) 50vw, 33vw" alt="Plats à partager sur une table en bois" width="700" height="700" loading="lazy" decoding="async" data-fallback>
+            <figcaption>À partager</figcaption>
+          </figure>
+          <figure data-fallback-box>
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&amp;fit=crop&amp;w=700&amp;q=70"
+                 srcset="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&amp;fit=crop&amp;w=500&amp;q=70 500w,
+                         https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&amp;fit=crop&amp;w=700&amp;q=70 700w"
+                 sizes="(max-width: 44rem) 50vw, 33vw" alt="Assiette de légumes frais et colorés" width="700" height="700" loading="lazy" decoding="async" data-fallback>
+            <figcaption>Légumes du marché</figcaption>
+          </figure>
+        </div>
+        <p class="credit">Photos&nbsp;: <a href="https://unsplash.com">Unsplash</a> (licence Unsplash).</p>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="reserver" aria-labelledby="reserver-title">
+      <div class="wrap booking">
+        <div class="booking__intro">
+          <p class="kicker">Réservation</p>
+          <h2 id="reserver-title">Réserver une table</h2>
+          <p>Remplissez le formulaire&nbsp;: nous vous confirmons votre réservation par e-mail ou par téléphone dans les meilleurs délais.</p>
+          <p>Pour un groupe de plus de 8 personnes ou une réservation le jour même, appelez-nous&nbsp;:</p>
+          <a class="booking__phone" href="tel:+33261913780">02 61 91 37 80</a>
+        </div>
+
+        <form class="form" data-form data-subject="Demande de réservation — Salicorne (démo)" data-from-name="Site Salicorne (démo)" action="https://api.web3forms.com/submit" method="post">
+          <div class="field field--full">
+            <label for="nom">Nom</label>
+            <input id="nom" name="nom" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="tel">Téléphone</label>
+            <input id="tel" name="telephone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="heure">Heure</label>
+            <select id="heure" name="heure" required>
+              <option value="">Choisissez…</option>
+              <optgroup label="Déjeuner">
+                <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option>
+              </optgroup>
+              <optgroup label="Dîner">
+                <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="couverts">Nombre de personnes</label>
+            <select id="couverts" name="couverts" required>
+              <option value="">Choisissez…</option>
+              <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="message">Message <span class="opt">(facultatif)</span></label>
+            <textarea id="message" name="message" placeholder="Allergies, occasion particulière, préférence pour la terrasse…"></textarea>
+          </div>
+          <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="form__legal">Le restaurant est fermé le lundi. Vos coordonnées servent uniquement à gérer votre réservation. <a href="mentions-legales.html#donnees">En savoir plus</a>.</p>
+          <button class="btn btn--primary" type="submit">Envoyer ma demande</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="./"><strong>Salicorne</strong><small>Bistrot marin · Saint-Nazaire</small></a>
+          <p>Cuisine du marché et produits de la mer, face au port.</p>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p>3 quai de l’Exemple<br>44600 Saint-Nazaire<br><a href="tel:+33261913780">02 61 91 37 80</a></p>
+        </div>
+        <div>
+          <h2>Horaires</h2>
+          <p>Du mardi au samedi, midi et soir<br>Dimanche midi<br>Fermé le lundi</p>
+        </div>
+        <div>
+          <h2>Langue</h2>
+          <p><a href="en/" hreflang="en" lang="en">English version</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Salicorne — restaurant fictif · <a href="mentions-legales.html">Mentions légales</a></p>
+        <p>Site réalisé par <a href="../../">Simon Vallée</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
