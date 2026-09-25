@@ -31,19 +31,41 @@ assets/
 demos/<démo>/style.css   chaque démo a sa propre identité visuelle
 ```
 
-## Mettre en ligne gratuitement (GitHub Pages)
+## Mise en ligne (GitHub Pages + domaine `simonvallee.fr`)
 
-1. Sur GitHub : **Settings → Pages**.
-2. Source : **Deploy from a branch**, branche `main` (après fusion de cette branche), dossier `/ (root)`.
-3. Le site est publié sur `https://sucubria.github.io/portfolio/`.
+Le site est hébergé gratuitement par GitHub Pages et servi sur
+`https://simonvallee.fr/` (fichier `CNAME` à la racine).
 
-Si vous utilisez ensuite votre propre nom de domaine, remplacez l’adresse de
-base partout (balises `canonical`, `hreflang`, Open Graph, `sitemap.xml`,
-`robots.txt`, `404.html`) :
+1. Sur GitHub : **Settings → Pages**. Source : **Deploy from a branch**,
+   branche `main`, dossier `/ (root)`.
+2. Chez OVHcloud, dans la **zone DNS** de `simonvallee.fr` : supprimer les
+   enregistrements `A` et `AAAA` existants du domaine nu et l’entrée `www`
+   (ne pas toucher aux `MX`, `SPF` et autres entrées de la messagerie), puis
+   ajouter :
+
+   | Sous-domaine | Type | Cible |
+   | --- | --- | --- |
+   | *(vide)* | A | 185.199.108.153 |
+   | *(vide)* | A | 185.199.109.153 |
+   | *(vide)* | A | 185.199.110.153 |
+   | *(vide)* | A | 185.199.111.153 |
+   | *(vide)* | AAAA | 2606:50c0:8000::153 |
+   | *(vide)* | AAAA | 2606:50c0:8001::153 |
+   | *(vide)* | AAAA | 2606:50c0:8002::153 |
+   | *(vide)* | AAAA | 2606:50c0:8003::153 |
+   | www | CNAME | sucubria.github.io. |
+
+3. Dans **Settings → Pages → Custom domain**, vérifier que `simonvallee.fr`
+   est renseigné, attendre la validation DNS (de quelques minutes à quelques
+   heures), puis cocher **Enforce HTTPS**.
+
+Pour changer à nouveau de domaine, remplacer l’adresse de base partout
+(balises `canonical`, `hreflang`, Open Graph, `sitemap.xml`, `robots.txt`,
+`404.html`) et mettre à jour `CNAME` :
 
 ```sh
-grep -rl "https://sucubria.github.io/portfolio/" . --include="*.html" --include="*.xml" --include="*.txt" \
-  | xargs sed -i "s#https://sucubria.github.io/portfolio/#https://www.votre-domaine.fr/#g"
+grep -rl "https://simonvallee.fr/" . --include="*.html" --include="*.xml" --include="*.txt" \
+  | xargs sed -i "s#https://simonvallee.fr/#https://www.nouveau-domaine.fr/#g"
 ```
 
 ## Activer les formulaires (Web3Forms, gratuit)
