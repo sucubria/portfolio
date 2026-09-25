@@ -6,20 +6,20 @@
 //
 // Tant que la clé est vide, les formulaires fonctionnent en « mode démo » :
 // ils sont validés et affichent une confirmation, mais rien n'est envoyé.
-const WEB3FORMS_ACCESS_KEY = "";
+const WEB3FORMS_ACCESS_KEY = "d050cfd5-1207-4a56-8fce-51f82df0b344";
 
 const ENDPOINT = "https://api.web3forms.com/submit";
 
 const MESSAGES = {
   fr: {
     sending: "Envoi en cours…",
-    success: "Merci ! Votre demande a bien été envoyée. Nous revenons vers vous très vite.",
+    success: "Merci ! Votre demande a bien été envoyée. (Site de démonstration : elle parvient à Simon Vallée, pas à une vraie entreprise.)",
     demo: "Merci ! (Site de démonstration : aucune demande n'a réellement été envoyée.)",
     error: "L'envoi a échoué. Réessayez dans un instant ou contactez-nous par téléphone.",
   },
   en: {
     sending: "Sending…",
-    success: "Thank you! Your request has been sent. We'll get back to you shortly.",
+    success: "Thank you! Your request has been sent. (Demo website: it goes to Simon Vallée, not to a real business.)",
     demo: "Thank you! (Demo website: no request has actually been sent.)",
     error: "Something went wrong. Please try again in a moment or contact us by phone.",
   },
