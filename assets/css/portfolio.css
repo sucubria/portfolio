@@ -1000,22 +1000,6 @@ ul {
   color: var(--accent);
 }
 
-.zones {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1.5rem;
-}
-
-.zones li {
-  padding: 0.35rem 0.85rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--ink);
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 @media (max-width: 52rem) {
   .about {
     grid-template-columns: 1fr;
