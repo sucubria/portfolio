@@ -82,12 +82,13 @@ compte).
 Tant que la clé est vide, les formulaires fonctionnent en **mode démo** : ils
 valident les champs et affichent une confirmation, sans rien envoyer.
 
-## À compléter avant publication
+## Mentions légales
 
-- `mentions-legales.html` et `en/legal-notice.html` : adresse professionnelle et
-  SIRET (repérés par `[à compléter]`). Vérifiez aussi la mention « TVA non
-  applicable, article 293 B du CGI », valable seulement si vous relevez de la
-  franchise en base de TVA.
+Les mentions légales du portfolio (`mentions-legales.html` et
+`en/legal-notice.html`) contiennent l’adresse professionnelle, le SIREN/SIRET,
+le code APE et la mention « TVA non applicable, article 293 B du CGI »
+(franchise en base de TVA). À mettre à jour dans les deux langues en cas de
+déménagement ou de sortie de la franchise de TVA.
 
 ## Photos
 
